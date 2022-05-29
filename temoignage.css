@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dongle:wght@300&family=Neonderthaw&family=Poppins:ital,wght@0,400;0,600;1,300;1,600&display=swap');
+:root {
+    --font-size:1rem;
+  }
+  
+  /* Reset */
+  * {
+    box-sizing:border-box; 
+    outline:none;
+    margin:0;
+    padding:0;
+  }
+  ul {
+    list-style:none;
+  }
+  
+  /* Basic style */
+  body {
+    margin:0;
+    font-size:var(--font-size);
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .temoignage h2{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    
+}
+.temoignage{
+    background-image: url(./img/image_hotel.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temoignage .contenu{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+}
+.temoignage .contenu .box{
+    width: 20em;
+    height: 15em;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2em;
+    
+}
+.temoignage .contenu .box .imbox{
+    width: 70px;
+    height: 80px;
+    border-radius: 50px;
+   
+    overflow: hidden;
+}
+.temoignage .contenu .box .imbox img{
+   
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+.temoignage .contenu .box .text{
+    text-align: center;
+    color: #000;
+    font-style: italic;
+    font-size: 1em;
+    width: 15em;
+}
+.temoignage .contenu .box .text h3{
+    color: tomato;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+.btn_noter button{
+    
+    color: #fff;
+     height: 2.5em;
+     width: 8em;
+    background: #D2691E;
+     text-transform: uppercase;
+     border-radius: 1em;
+     text-align: center;
+     border: none;
+     cursor: pointer;
+     
+ }
+  .btn_noter button:hover{
+      height: 3em;
+   letter-spacing: 0.2em;
+   background: #f37c0c;
+   transition: ease-in-out;
+ }
+@media (min-width:715px) {
+    .temoignage .contenu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .temoignage{
+        background-image: url(./img/image_hotel.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    .btn_noter button{
+        margin-top: 3em;
+    }
+}

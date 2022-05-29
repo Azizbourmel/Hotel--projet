@@ -1,0 +1,85 @@
+
+  * {
+    box-sizing:border-box; 
+    outline:none;
+    margin:0;
+    padding:0;
+  }
+  ul {
+    list-style:none;
+  }
+  
+  /* Basic style */
+  body {
+    margin:0;
+    font-size:var(--font-size);
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .notation{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .rating {
+    direction: rtl;
+ }
+ .rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+ }
+ .message{
+     margin: 2em;
+ }
+ 
+ .message .inputboites input,
+ .inputboites textarea{
+    width: 20em;
+    border: 0.1em solid #555;
+    padding: 0.5em;
+    color: #111;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    resize: none;
+    height: 10em;
+    margin-top: 1.5em;
+}
+ .btnSection button{
+    color: #000;
+     height: 2.5em;
+     width: 8em;
+    background: #41ace8;
+     text-transform: uppercase;
+     border-radius: 1em;
+     text-align: center;
+     margin-bottom: 0.7em;
+     position: relative;
+     
+     border: none;
+     cursor: pointer;
+     
+ }
+ .btnSection button:hover{
+    letter-spacing: 0.2em;
+    background: #048edf;
+    transition: ease-in-out;
+  }
+  @media (min-width:715px) {
+    .inputboites input,
+     .inputboites textarea{
+        
+        margin-top: 0.5em;
+       height: 15em;
+       width: 50em;
+    }
+  }
+ 
